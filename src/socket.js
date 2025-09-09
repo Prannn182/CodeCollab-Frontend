@@ -15,7 +15,7 @@ class SocketManager {
     if (this.socket || this.isInitializing) return;
     
     this.isInitializing = true;
-    const serverUrl = import.meta.env.VITE_SERVER_URL || 'http://localhost:5001';
+    const serverUrl = import.meta.env.VITE_SERVER_URL || 'https://codecollab-backend-s0gx.onrender.com';
     console.log('[DEBUG] Initializing socket connection to:', serverUrl);
     
     try {
